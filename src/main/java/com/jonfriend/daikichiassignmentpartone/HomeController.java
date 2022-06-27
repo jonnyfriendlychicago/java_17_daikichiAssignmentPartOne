@@ -5,17 +5,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-@RequestMapping("/hello")
+@RequestMapping("/daikichi")
 public class HomeController {
 
 	@RequestMapping("")
 	public String hello() {
-		return "hello daikichi"; 
+		return "Welcome!"; 
 	}
 	
-	@RequestMapping("/world")
-	public String world() {
-		return "konichiwa"; 
+	@RequestMapping("/today")
+	public String today() {
+		return "Today you will find luck in all your endeavors!"; 
+	}
+	
+	@RequestMapping("/tomorrow")
+	public String tommy() {
+		return "Tomorrow, an opportunity will arivse, so be sure to be open to new ideas!"; 
 	}
 	
 }
